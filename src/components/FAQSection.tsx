@@ -7,38 +7,44 @@ const faqs = [
   { 
     id: "01",
     category: "ELIGIBILITY", 
-    title: "Who can register for hackX 11.0?", 
-    answer: "hackX is open to undergraduate students from recognized universities and higher education institutions in Sri Lanka." 
+    title: "Who can register for hackX Jr. 9.0?", 
+    answer: "hackX Jr. 9.0 is open to school students across Sri Lanka who are passionate about innovation, creativity, and solving real-world challenges." 
   },
   { 
     id: "02",
     category: "TEAMS", 
-    title: "How many people can be in a team?", 
-    answer: "You can participate individually or as a team of up to five members. All team members must be undergraduates from the same university or higher education institute." 
+    title: "How many students can be in a team?", 
+    answer: "Teams can consist of up to five students representing the same school." 
   },
   { 
     id: "03",
     category: "FEES", 
     title: "Is there a registration fee?", 
-    answer: "No. Registration is completely free, and no fee is charged at any stage of the competition." 
+    answer: "No. Registration and participation in hackX Jr. 9.0 are completely free of charge." 
   },
   { 
     id: "04",
     category: "PROTOTYPE", 
-    title: "Do I need a finished product to register?", 
-    answer: "No. A prototype is not required during the initial stages. However, teams that advance to the Semi-Finals and Grand Finals will be expected to demonstrate a fully or partially developed prototype to validate their solution." 
+    title: "Do we need a finished product to register?", 
+    answer: "No. Participants can register with an innovative idea. Teams advancing to later stages may be required to develop and present a prototype or proof of concept." 
   },
   { 
     id: "05",
     category: "IDEAS", 
     title: "What type of ideas can be submitted?", 
-    answer: "Any innovative startup idea, product, service, or solution that addresses a real-world problem and has the potential to create value and grow into a sustainable venture." 
+    answer: "Any innovative solution that addresses a real-world problem is welcome. Ideas may focus on areas such as education, environment, healthcare, agriculture, sustainability, technology, community development, and social impact." 
   },
   { 
     id: "06",
-    category: "FACULTIES", 
-    title: "Can students from non-tech faculties participate?", 
-    answer: "Absolutely. hackX welcomes innovation from any discipline. Healthcare, agriculture, finance, education or any other field is fair game as long as there is a technology-driven solution behind it." 
+    category: "BACKGROUND", 
+    title: "Can students without coding experience participate?", 
+    answer: "Absolutely. hackX Jr. welcomes students from all backgrounds. Creativity, critical thinking, teamwork, and problem-solving are just as important as technical skills." 
+  },
+  { 
+    id: "07",
+    category: "MENTORSHIP", 
+    title: "Will participants receive mentorship?", 
+    answer: "Yes. Participants will gain access to mentorship, workshops, and guidance sessions conducted by industry professionals and experienced innovators." 
   }
 ];
 
@@ -78,7 +84,7 @@ export default function FAQSection() {
               // Calculate dynamic cable bending
               const isPushedDown = activeIdx !== null && activeIdx < idx;
               const expansionHeight = 115; // Estimated pixel height of the expanded answer block
-              const baseY = [225, 135, 45, -45, -135, -225][idx];
+              const baseY = [270, 180, 90, 0, -90, -180, -270][idx];
               // If the item is pushed down by an item above it, we subtract the expansion height 
               // from the SVG's endpoint to perfectly counteract the physical downward movement, 
               // anchoring the right end to the exact same physical pixel on the screen!

@@ -7,59 +7,59 @@ import BorderGlow from "@/components/ui/BorderGlow";
 /* ─── OC Data ─── */
 const coordinators = [
   {
-    name: "Praveen Madawalage",
+    name: "Harshana Praveen",
     role: "Chief Coordinator",
-    email: "praveen.hackx@gmail.com",
-    phone: "+94 77 286 8600",
+    email: "harshana.hackjr@gmail.com",
+    phone: "+94 77 208 6681",
     avatar: "/OC/Praveen.webp",
   },
   {
-    name: "Tharushi Kulathunga",
+    name: "Lawindi Tharunya",
     role: "Chief Coordinator",
-    email: "tharushi.hackx@gmail.com",
-    phone: "+94 70 725 3446",
+    email: "lawindi.hackjr@gmail.com",
+    phone: "+94 71 543 5636",
     avatar: "/OC/Tharushi.webp",
   },
   {
-    name: "Sameera Ekanayaka",
-    role: "Financial Coordinator",
-    email: "sameera.hackx@gmail.com",
-    phone: "+94 76 142 7662",
+    name: "Osanda Senevirathna",
+    role: "Media Coordinator",
+    email: "osanda.hackjr@gmail.com",
+    phone: "+94 77 220 3475",
     avatar: "/OC/Sameera.webp",
   },
   {
-    name: "Imasha Karunathilaka",
-    role: "Financial Coordinator",
-    email: "imashaa.hackx@gmail.com",
-    phone: "+94 77 485 2074",
+    name: "Kaveendya Jayalath",
+    role: "Secretary",
+    email: "kaveendya.hackjr@gmail.com",
+    phone: "+94 76 991 0659",
     avatar: "/OC/Imasha.webp",
   },
   {
-    name: "Tharindu Dhanushka",
-    role: "Partnership Coordinator",
-    email: "tharindu.hackx@gmail.com",
-    phone: "+94 76 219 5995",
+    name: "Thaveesha Weerasinghe",
+    role: "Financial Coordinator",
+    email: "thaveesha.hackjr@gmail.com",
+    phone: "+94 76 609 8316",
     avatar: "/OC/Tharindu.webp",
   },
   {
-    name: "Thilini Bhagya",
-    role: "Partnership Coordinator",
-    email: "thilini.hackx@gmail.com",
-    phone: "+94 76 947 6496",
+    name: "Hashmi Nethmindi",
+    role: "Financial Coordinator",
+    email: "hashmi.hackjr@gmail.com",
+    phone: "+94 70 513 5811",
     avatar: "/OC/Thilini.webp",
   },
   {
-    name: "Charith Fonseka",
-    role: "Marketing Coordinator",
-    email: "charith.hackx@gmail.com",
-    phone: "+94 78 256 7430",
+    name: "Aadila Anees",
+    role: "Partnership Coordinator",
+    email: "aadila.hackjr@gmail.com",
+    phone: "+94 77 171 9609",
     avatar: "/OC/Charith.webp",
   },
   {
-    name: "Manumi Senevirathna",
-    role: "Marketing Coordinator",
-    email: "manumi.hackx@gmail.com",
-    phone: "+94 77 015 0508",
+    name: "Hiruni De Joedth",
+    role: "Partnership Coordinator",
+    email: "hiruni.hackjr@gmail.com",
+    phone: "+94 74 046 0400",
     avatar: "/OC/Manumi.webp",
   },
 ];
@@ -369,7 +369,7 @@ export default function TeamSection() {
               transition={{ duration: 0.6, delay: 0.14 }}
               className="text-white/55 mt-4 text-sm md:text-base font-light leading-relaxed max-w-lg text-center md:text-left mx-auto md:mx-0"
             >
-              Have a question? Reach the right person directly. Our team is ready to assist you every step of the way.
+              Have questions about hackX Jr. 9.0? Our organizing committee is ready to assist students, teachers, and schools with registrations, event details, and participation. Reach out to us—we&apos;re here to support your innovation journey.
             </motion.p>
           </div>
 

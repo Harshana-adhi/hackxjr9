@@ -180,18 +180,18 @@ export default function NewSection2() {
                 {...fade(0.05)}
                 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.05] text-center md:text-left uppercase"
               >
-                What is hackX?
+                What is hackX Jr?
               </motion.h2>
             </div>
 
             <motion.div {...fade(0.15)} className="space-y-6 text-[1.05rem] md:text-[1.15rem] text-white/55 font-light leading-relaxed relative z-30 text-center md:text-left">
               <p>
-                hackX 11.0 is Sri Lanka&apos;s premier inter-university startup challenge, organized by the Industrial
-                Management Science Students&apos; Association at the Department of Industrial Management,
+                hackX Jr. is Sri Lanka&apos;s premier school-level startup and innovation challenge, organized by the Industrial
+                Management Science Students&apos; Association (IMSSA) at the Department of Industrial Management,
                 University of Kelaniya.
               </p>
               <p>
-                hackX provides a platform for undergraduate students to work in teams and transform real-world problems into innovative solutions with startup potential. Whether it is a product, service, or technology-driven solution, participants will receive guidance, mentorship, and industry exposure through multiple phases of the competition to help develop, validate, and refine their ideas into viable business ventures.
+                Now in its 9th edition, hackX Jr. has established itself as Sri Lanka&apos;s premier school-level startup and innovation challenge, inspiring young innovators across the nation. The competition empowers school students to identify real-world problems and transform them into functional prototypes and scalable solutions long before they enter university. Through expert mentorship, foundational business training, and a prestigious Grand Finals stage, hackX Jr. continues to nurture the next generation of entrepreneurs, innovators, and technology leaders.
               </p>
             </motion.div>
 
@@ -205,21 +205,21 @@ export default function NewSection2() {
 
           {/* RIGHT — Bento Stats Grid */}
           <div className="lg:col-span-6 grid grid-cols-2 gap-5 relative z-30">
-            {/* Stat: 11 Editions */}
+            {/* Stat: 9 Editions */}
             <StatCard className="col-span-1 min-h-[200px]" delay={0.1}>
-              <div className="text-3xl md:text-4xl font-extrabold text-white mb-2 tracking-tight">11</div>
+              <div className="text-3xl md:text-4xl font-extrabold text-white mb-2 tracking-tight">9</div>
               <p className="text-white/75 font-medium tracking-wide text-sm">Editions</p>
-              <p className="text-[10px] text-white/35 mt-1 uppercase tracking-widest">More Than a Decade of Innovation</p>
+              <p className="text-[10px] text-white/35 mt-1 uppercase tracking-widest">Growing Legacy of Innovation</p>
             </StatCard>
 
-            {/* Stat: 25+ Universities */}
+            {/* Stat: 100+ Schools */}
             <StatCard className="col-span-1 min-h-[200px]" delay={0.18}>
-              <div className="text-3xl md:text-4xl font-extrabold text-white mb-2 tracking-tight">25+</div>
-              <p className="text-white/75 font-medium tracking-wide text-sm">Universities</p>
+              <div className="text-3xl md:text-4xl font-extrabold text-white mb-2 tracking-tight">100+</div>
+              <p className="text-white/75 font-medium tracking-wide text-sm">Schools</p>
               <p className="text-[10px] text-white/35 mt-1 uppercase tracking-widest">Represented Nationwide</p>
             </StatCard>
 
-            {/* Stat: 265+ Teams — spans full width */}
+            {/* Stat: 380+ Teams — spans full width */}
             <StatCard className="col-span-2 min-h-[220px]" delay={0.26}>
               <div
                 className="text-4xl md:text-5xl font-extrabold mb-2 tracking-tight"
@@ -231,7 +231,7 @@ export default function NewSection2() {
                   filter: "drop-shadow(0 0 18px rgba(91,184,255,0.35))",
                 }}
               >
-                265+
+                380+
               </div>
               <p className="text-white/75 font-medium text-lg tracking-wide">Teams Participating</p>
               <p className="text-xs text-white/35 mt-1 uppercase tracking-widest">Registered in 2025</p>

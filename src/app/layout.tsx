@@ -1,24 +1,24 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://hackx.lk";
-const TITLE = "hackX 11.0 — Sri Lanka's Premier Inter-University Startup Challenge";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://hackxjr.lk";
+const TITLE = "hackX Jr.9.0 — Sri Lanka's Premier Inter-School Innovation Competition";
 const DESCRIPTION =
-  "Where university students turn bold ideas into real ventures. Backed by the nation. Built by students. Eleven years running.";
+  "Where we empower young innovators to give shapes to ideas. Backed by passion. Driven by innovation.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: TITLE,
   description: DESCRIPTION,
   keywords: [
-    "hackX",
-    "hackX 11.0",
-    "startup challenge",
+    "hackX Jr",
+    "hackX Jr.9.0",
+    "innovation competition",
     "Sri Lanka",
-    "inter-university",
+    "inter-school",
     "University of Kelaniya",
-    "student startups",
-    "entrepreneurship",
+    "school students",
+    "young innovators",
   ],
   alternates: {
     canonical: "/",
@@ -26,14 +26,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: SITE_URL,
-    siteName: "hackX 11.0",
+    siteName: "hackX Jr.9.0",
     title: TITLE,
     description: DESCRIPTION,
     locale: "en_US",
     images: [
       {
         url: "/hackxlogo.webp",
-        alt: "hackX 11.0",
+        alt: "hackX Jr.9.0",
       },
     ],
   },

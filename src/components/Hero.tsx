@@ -136,7 +136,7 @@ export default function Hero() {
               backgroundClip: "text",
             }}
           >
-            Inter-University Startup
+            Inter-School Innovation
           </motion.span>
 
           {/* Line 3 */}
@@ -150,7 +150,7 @@ export default function Hero() {
               color: "rgba(255,255,255,0.88)",
             }}
           >
-            Challenge.
+            Competition.
           </motion.span>
         </h1>
       </motion.div>
@@ -203,7 +203,7 @@ export default function Hero() {
             padding: "0 24px",
           }}
         >
-          Where university students transform bold ideas into opportunities.
+          Where school students transform bold ideas into opportunities.
         </motion.p>
 
         <motion.div

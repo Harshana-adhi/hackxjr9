@@ -185,7 +185,7 @@ export default function MemoriesSection() {
             Moments of Innovation
           </h2>
           <p className="text-lg text-white/60 font-light max-w-3xl mx-auto text-center">
-            Experience the highlights, energy, and unforgettable moments that have defined hackX 10.0 last year.
+            Experience the highlights, energy, and unforgettable moments that have defined hackX over the years.
           </p>
         </motion.div>
       </div>

@@ -90,11 +90,11 @@ export default function AskAISection() {
   const [messages, setMessages] = useState<Message[]>([
     {
       sender: "user",
-      text: "Does our product need to be fully built by the time we register?",
+      text: "Do we need a working prototype when we register?",
     },
     {
       sender: "ai",
-      text: "No, it does not. At the registration stage, you only need to submit your idea and a structured proposal outlining the problem, solution, and impact. A working prototype is only required later, by the ideaX Semi-Finals on October 3. Take your time to refine the core concept first!",
+      text: "No. At the registration stage, you only need to submit your idea and the required application details. A working prototype is not mandatory initially, but teams progressing to later stages may be expected to showcase a prototype or proof of concept.",
       showMenu: true,
     },
   ]);
@@ -180,23 +180,23 @@ export default function AskAISection() {
       console.error("Error calling chatbot API:", error);
 
       // Smart local fallback to keep the user engaged when API is offline
-      let fallbackReply = "I'm having trouble connecting to the hackX chatbot service right now. Please try again later or reach out to our coordinators directly.";
+      let fallbackReply = "I'm having trouble connecting to the hackX Jr. chatbot service right now. Please try again later or reach out to our coordinators directly.";
       const lowerText = text.toLowerCase();
 
       if (lowerText.includes("team") || lowerText.includes("member") || lowerText.includes("group") || lowerText.includes("size")) {
-        fallbackReply = "Teams must consist of **2 to 5 members**. All team members must be currently enrolled undergraduates from the same university or higher education institute.";
+        fallbackReply = "Teams can consist of **up to 5 students**, and all team members must be currently enrolled at the same school.";
       } else if (lowerText.includes("fee") || lowerText.includes("cost") || lowerText.includes("free") || lowerText.includes("pay")) {
-        fallbackReply = "hackX 11.0 is **completely free** to enter! There are no registration fees or hidden prerequisites.";
+        fallbackReply = "hackX Jr. 9.0 is **completely free** to enter! There are no registration fees or hidden prerequisites.";
       } else if (lowerText.includes("date") || lowerText.includes("timeline") || lowerText.includes("deadline") || lowerText.includes("when")) {
-        fallbackReply = "Here is the key timeline for **hackX 11.0**:\n\n• **June 23**: Registrations Open\n• **July 31**: Proposal Submission & Video Submission\n• **Sep – Oct**: designX Expert Workshops\n• **October 3**: ideaX Semi-Finals\n• **November 11**: Grand Finals (Tentative)";
+        fallbackReply = "Here is the key timeline for **hackX Jr. 9.0**:\n\n• **July 3**: Registrations Open\n• **July 31**: Awareness Session & Proposal Submission\n• **August 26**: Online Workshop Series 1\n• **October 3**: InnoX (Semi-Finals)\n• **October 13**: Online Workshop Series 2\n• **November 11**: Grand Finals";
       } else if (lowerText.includes("register") || lowerText.includes("sign up") || lowerText.includes("apply")) {
-        fallbackReply = "You can register for hackX 11.0 by clicking any of the **Register Now** buttons on this website. Registrations close when proposals are due on **July 31**.";
+        fallbackReply = "You can register for hackX Jr. 9.0 by clicking any of the **Register Now** buttons on this website. Registration and participation are completely free.";
       } else if (lowerText.includes("criteria") || lowerText.includes("compete") || lowerText.includes("eligible")) {
-        fallbackReply = "All currently enrolled undergraduates from Sri Lankan universities or higher education institutes are eligible. Innovation from all disciplines (tech, business, science, etc.) is welcome as long as there is a technology-driven solution.";
-      } else if (lowerText.includes("designx") || lowerText.includes("workshop")) {
-        fallbackReply = "designX is an exclusive 4-part workshop series for semi-finalists, covering business modelling, startup structuring, and market validation, led by industry experts.";
+        fallbackReply = "hackX Jr. 9.0 is open to **school students across Sri Lanka**. Innovation from all backgrounds is welcome as long as there is a technology-driven solution behind it.";
+      } else if (lowerText.includes("workshop") || lowerText.includes("mentor") || lowerText.includes("series")) {
+        fallbackReply = "hackX Jr. features two **Online Workshop Series** (open to all), offering foundational training and advanced mentoring to help you build and refine your innovation.";
       } else if (lowerText.includes("contact") || lowerText.includes("coordinators") || lowerText.includes("email") || lowerText.includes("phone")) {
-        fallbackReply = "For official queries, you can reach out directly:\n\n• **Ashan Perera** (President): president@hackx.lk | +94 77 000 0001\n• **Dilmi Rathnayake** (Secretary): secretary@hackx.lk\n• **Kavinda Silva** (Tech): tech@hackx.lk";
+        fallbackReply = "For official queries, you can reach out directly:\n\n• **Harshana Praveen** (Chief Coordinator): harshana.hackjr@gmail.com | +94 77 208 6681\n• **Lawindi Tharunya** (Chief Coordinator): lawindi.hackjr@gmail.com | +94 71 543 5636\n• **Osanda Senevirathna** (Media Coordinator): osanda.hackjr@gmail.com | +94 77 220 3475";
       }
 
       setTimeout(() => {
@@ -249,9 +249,9 @@ export default function AskAISection() {
           className="text-center mb-10 md:mb-12"
         >
 
-          <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-6 tracking-tight uppercase">Ask AI Anything</h2>
+          <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-6 tracking-tight uppercase">Ask Mascot Anything</h2>
           <p className="text-lg text-white/60 font-light max-w-2xl mx-auto text-center">
-            Chat with our AI Assistant to get instant answers about hackX 11.0
+            Chat with our AI Assistant to get instant answers about hackX Jr. 9.0
           </p>
         </motion.div>
 
@@ -271,7 +271,7 @@ export default function AskAISection() {
             <div className="flex items-center justify-between px-6 py-4 border-b border-white/5 bg-white/[0.02]">
               <div className="flex items-center gap-3">
                 <SiriOrb size={34} />
-                <span className="text-sm font-semibold text-white tracking-wide">Ask AI</span>
+                <span className="text-sm font-semibold text-white tracking-wide">Mascot</span>
               </div>
               <div className="flex items-center gap-2">
                 <div className="w-3 h-3 rounded-full bg-white/10" />
@@ -307,8 +307,8 @@ export default function AskAISection() {
                             "Eligibility",
                             "Timeline",
                             "Rules & Guidelines",
-                            "hackX",
-                            "hackX Jr",
+                            "About hackX Jr",
+                            "Prizes",
                             "Contact",
                           ].map((item) => (
                             <button
@@ -356,7 +356,7 @@ export default function AskAISection() {
                   type="text" 
                   value={inputValue}
                   onChange={(e) => setInputValue(e.target.value)}
-                  placeholder="Ask a question about hackX..." 
+                  placeholder="Ask a question about hackX Jr…" 
                   className="flex-1 bg-transparent border-none outline-none text-white text-sm px-2 py-2 placeholder:text-white/30"
                   disabled={isLoading}
                 />
@@ -371,7 +371,7 @@ export default function AskAISection() {
                 </button>
               </div>
               <p className="text-center mt-3 text-[10px] text-white/30 uppercase tracking-widest">
-                Powered by AI. For official queries, contact the relative coordinators.
+                Powered by AI. For official inquiries, please contact the organizing committee.
               </p>
             </form>
 

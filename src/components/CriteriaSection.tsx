@@ -6,19 +6,19 @@ import { useRef } from "react";
 const criteria = [
   {
     title: "Go Solo or Build a Team",
-    desc: "Participate individually or form a team of two to five members. All team members must be currently enrolled undergraduates from the same university or higher education institute.",
+    desc: "You can participate as a solo innovator or form a team of up to 5 members. All team members must be currently enrolled students from the same school, encouraging collaboration within your own learning environment.",
     imageUrl: "/criteria-images/icon-1.webp",
     color: "#5BB8FF",
   },
   {
     title: "Your Idea",
-    desc: "Present an innovative startup idea, product, service, or solution that addresses a real-world problem or creates meaningful value. Your idea should demonstrate originality, practical potential, and the ability to grow into a sustainable venture.",
+    desc: "We welcome ideas that solve real-world problems through innovative, technology-driven solutions. From smart environments and green tech to digital education, healthcare, community well-being, or everyday life hacks—if it uses technology to make an impact, it belongs here.",
     imageUrl: "/criteria-images/icon-2.webp",
     color: "#1A6FD4",
   },
   {
     title: "Start Your Journey",
-    desc: "Participation is completely free with no registration fees or prerequisites. Simply sign up, submit your proposal, and let your idea do the talking.",
+    desc: "Participation is completely free, with no registration fee or complex prerequisites. All you need is your idea, your creativity, and your drive. Simply sign up and submit your initial innovation proposal, and let your creativity take center stage.",
     imageUrl: "/criteria-images/icon-3.webp",
     color: "#5BB8FF",
   },

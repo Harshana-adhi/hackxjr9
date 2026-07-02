@@ -5,7 +5,6 @@ import Hero from "@/components/Hero";
 import NewSection2 from "@/components/NewSection2";
 import JourneySection from "@/components/JourneySection";
 import CriteriaSection from "@/components/CriteriaSection";
-import AmbassadorSection from "@/components/AmbassadorSection";
 import MemoriesSection from "@/components/MemoriesSection";
 import PrizesSection from "@/components/PrizesSection";
 import TeamSection from "@/components/TeamSection";
@@ -24,7 +23,6 @@ export default function Home() {
         <CriteriaSection />
         <JourneySection />
         <PrizesSection />
-        {/* <AmbassadorSection /> */}
         <MemoriesSection />
         <TeamSection />
         <FAQSection />

@@ -134,7 +134,7 @@ export default function Footer() {
               <div className="relative" style={{ width: "130px", height: "40px" }}>
                 <Image
                   src="/hackxlogo.webp"
-                  alt="hackX Logo"
+                  alt="hackX Jr. Logo"
                   fill
                   sizes="130px"
                   className="object-contain object-center md:object-left"
@@ -142,14 +142,14 @@ export default function Footer() {
               </div>
             </Link>
             <p className="text-white/55 text-sm font-light max-w-[320px] md:max-w-[240px] leading-relaxed text-center md:text-left">
-              Sri Lanka&apos;s premier national startup challenge for undergraduates across all universities.
+              Sri Lanka&apos;s premier school innovation challenge empowering the next generation of innovators and problem-solvers.
             </p>
           </div>
 
           {/* Right Column */}
           <div className="flex flex-col items-center md:items-end gap-4">
             <p className="text-white/55 text-sm font-light max-w-[320px] md:max-w-[280px] leading-relaxed text-center md:text-right">
-              Organized by the Industrial Management Science Students’ Association, University of Kelaniya in collaboration with the Ministry of Science &amp; Technology and The National Science Foundation of Sri Lanka.
+              Organized by the Industrial Management Science Students’ Association (IMSSA), University of Kelaniya, hackX Jr. provides a national platform for school students to develop innovative ideas, receive expert mentorship, and showcase their solutions on a national stage.
             </p>
             {/* Organizers logo strip */}
             <div
@@ -170,7 +170,7 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="max-w-7xl mx-auto pt-5 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-xs text-white/30 text-center md:text-left">&copy; {new Date().getFullYear()} hackX 11.0.</p>
+          <p className="text-xs text-white/30 text-center md:text-left">&copy; {new Date().getFullYear()} hackX Jr. 9.0. All Rights Reserved.</p>
           <div className="flex items-center gap-3">
             <a href="https://www.linkedin.com/company/imssauok/" className="social-glass" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" /><rect x="2" y="9" width="4" height="12" /><circle cx="4" cy="4" r="2" /></svg>

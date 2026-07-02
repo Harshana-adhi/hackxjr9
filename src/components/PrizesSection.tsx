@@ -15,7 +15,7 @@ const prizes = [
   {
     rank: "1st",
     label: "Champions",
-    amount: "LKR 200,000",
+    amount: "LKR 150,000",
     tagline: "Cash Prize",
     accent: "#FFD700",
     glow: "rgba(255,215,0,0.18)",
@@ -26,7 +26,7 @@ const prizes = [
   {
     rank: "2nd",
     label: "First Runners-Up",
-    amount: "LKR 150,000",
+    amount: "LKR 100,000",
     tagline: "Cash Prize",
     accent: "#C0C8D8",
     glow: "rgba(192,200,216,0.14)",
@@ -81,10 +81,10 @@ export default function PrizesSection() {
             {...fade(0.08)}
             className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.05] mb-6 uppercase"
           >
-            hackX 11.0 Awards
+            hackX Jr.9.0 Awards
           </motion.h2>
           <motion.p {...fade(0.16)} className="text-lg text-white/50 font-light max-w-xl mx-auto leading-relaxed text-center">
-            Celebrating innovation with remarkable rewards and opportunities for the next generation of entrepreneurs.
+            The summit of your innovation journey. Hard work, late-night brainstorming, and endless creativity culminate right here on the national stage.
           </motion.p>
         </div>
 
@@ -221,7 +221,7 @@ export default function PrizesSection() {
 
                     <div className="border-t border-white/5 pt-4 text-center md:text-left relative z-20">
                       <span className="text-[10px] text-white/30 tracking-widest font-semibold">
-                        GRAND FINALS · hackX 11.0
+                        GRAND FINALS · hackX Jr.9.0
                       </span>
                     </div>
 

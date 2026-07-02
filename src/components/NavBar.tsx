@@ -102,7 +102,7 @@ export default function NavBar() {
             <div className="relative w-[100px] sm:w-[120px] h-[32px] sm:h-[36px]">
               <Image
                 src="/hackxlogo.webp"
-                alt="hackX Logo"
+                alt="hackX Jr. Logo"
                 fill
                 sizes="(max-width: 640px) 100px, 120px"
                 style={{ objectFit: "contain", objectPosition: "left center" }}
