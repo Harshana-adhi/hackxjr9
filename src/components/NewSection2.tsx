@@ -147,7 +147,7 @@ export default function NewSection2() {
         {/* Top Right (Pillar) */}
         <motion.div
           style={{ y: y2, rotate: rotate2 }}
-          className="absolute lg:top-[-4%] lg:-right-[2%] xl:-right-[5%] w-[150px] lg:w-[180px] xl:w-[250px] opacity-90"
+          className="absolute lg:top-[-4%] lg:right-[2%] xl:right-[5%] w-[150px] lg:w-[180px] xl:w-[250px] opacity-90"
         >
           <motion.img
             src="/section 2/Top Right.webp"
