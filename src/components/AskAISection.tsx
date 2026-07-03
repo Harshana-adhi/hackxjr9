@@ -61,7 +61,7 @@ function formatMessageText(text: string) {
               key={key++}
               href={safeHref(urlVal)}
               target="_blank"
-              rel="noopener noreferrer" 
+              rel="noopener noreferrer"
               className="text-[#72E5F8] hover:underline font-medium"
             >
               {textVal}
@@ -102,7 +102,7 @@ export default function AskAISection() {
   const [isLoading, setIsLoading] = useState(false);
   const [sessionId, setSessionId] = useState("");
   const [debugActive, setDebugActive] = useState(false);
-  
+
   const chatContainerRef = useRef<HTMLDivElement>(null);
 
   // Mount logic to prepare session id and debug state
@@ -150,7 +150,7 @@ export default function AskAISection() {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ 
+        body: JSON.stringify({
           message: text,
           session_id: sessionId
         }),
@@ -165,12 +165,12 @@ export default function AskAISection() {
 
       const data = await response.json();
       const aiReply = data.answer || data.reply || data.response || "I didn't receive a response.";
-      
+
       setMessages((prev) => [
-        ...prev, 
-        { 
-          sender: "ai", 
-          text: aiReply, 
+        ...prev,
+        {
+          sender: "ai",
+          text: aiReply,
           tier: data.tier,
           source: data.source,
           showMenu: true
@@ -188,7 +188,7 @@ export default function AskAISection() {
       } else if (lowerText.includes("fee") || lowerText.includes("cost") || lowerText.includes("free") || lowerText.includes("pay")) {
         fallbackReply = "hackX Jr. 9.0 is **completely free** to enter! There are no registration fees or hidden prerequisites.";
       } else if (lowerText.includes("date") || lowerText.includes("timeline") || lowerText.includes("deadline") || lowerText.includes("when")) {
-        fallbackReply = "Here is the key timeline for **hackX Jr. 9.0**:\n\n• **July 3**: Registrations Open\n• **July 31**: Awareness Session & Proposal Submission\n• **August 26**: Online Workshop Series 1\n• **October 3**: InnoX (Semi-Finals)\n• **October 13**: Online Workshop Series 2\n• **November 11**: Grand Finals";
+        fallbackReply = "Here is the key timeline for **hackX Jr. 9.0**:\n\n• **July 3**: Registrations Open\n• **July 31**: Awareness Session\n• **August 1**: Proposal Submission\n• **August 26**: Online Workshop Series 1\n• **October 3**: InnoX (Semi-Finals)\n• **October 13**: Online Workshop Series 2\n• **November 11**: Grand Finals";
       } else if (lowerText.includes("register") || lowerText.includes("sign up") || lowerText.includes("apply")) {
         fallbackReply = "You can register for hackX Jr. 9.0 by clicking any of the **Register Now** buttons on this website. Registration and participation are completely free.";
       } else if (lowerText.includes("criteria") || lowerText.includes("compete") || lowerText.includes("eligible")) {
@@ -205,7 +205,7 @@ export default function AskAISection() {
       }, 750);
       return;
     }
-    
+
     setIsLoading(false);
   };
 
@@ -241,8 +241,8 @@ export default function AskAISection() {
       </div>
 
       <div className="max-w-7xl mx-auto px-6 md:px-8 lg:px-12 relative z-10">
-        
-        <motion.div 
+
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -256,7 +256,7 @@ export default function AskAISection() {
         </motion.div>
 
         {/* AI Chat Interface */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 40, scale: 0.95 }}
           whileInView={{ opacity: 1, y: 0, scale: 1 }}
           viewport={{ once: true, margin: "-50px" }}
@@ -264,9 +264,9 @@ export default function AskAISection() {
           className="relative w-full max-w-3xl mx-auto rounded-3xl p-[1px] group"
         >
           <div className="absolute inset-0 rounded-3xl bg-gradient-to-b from-white/20 via-white/5 to-transparent opacity-50" />
-          
+
           <div className="relative rounded-[23px] bg-[#010E13]/80 backdrop-blur-3xl overflow-hidden border border-white/10 shadow-2xl flex flex-col h-[560px] md:h-[660px]">
-            
+
             {/* Header */}
             <div className="flex items-center justify-between px-6 py-4 border-b border-white/5 bg-white/[0.02]">
               <div className="flex items-center gap-3">
@@ -281,7 +281,7 @@ export default function AskAISection() {
             </div>
 
             {/* Chat Body - Prevent Lenis Scroll Hijack and Bind Custom Scroll Ref */}
-            <div 
+            <div
               ref={chatContainerRef}
               data-lenis-prevent
               className="flex-1 overflow-y-auto p-6 space-y-6 custom-scrollbar"
@@ -290,12 +290,11 @@ export default function AskAISection() {
                 const isUser = msg.sender === "user";
                 return (
                   <div key={index} className={`flex ${isUser ? "justify-end" : "justify-start"}`}>
-                    <div 
-                      className={`max-w-[85%] px-5 py-4 rounded-2xl ${
-                        isUser 
-                          ? "rounded-tr-none bg-white/10 backdrop-blur-md text-white border border-white/5" 
+                    <div
+                      className={`max-w-[85%] px-5 py-4 rounded-2xl ${isUser
+                          ? "rounded-tr-none bg-white/10 backdrop-blur-md text-white border border-white/5"
                           : "rounded-tl-none bg-[#18A0C0]/10 backdrop-blur-md border border-[#72E5F8]/20 text-white/90 shadow-[0_0_20px_rgba(24,160,192,0.15)]"
-                      } text-sm font-light leading-relaxed`}
+                        } text-sm font-light leading-relaxed`}
                     >
                       {formatMessageText(msg.text)}
 
@@ -352,21 +351,21 @@ export default function AskAISection() {
             {/* Input Area */}
             <form onSubmit={handleSubmit} className="p-4 bg-white/[0.02] border-t border-white/5">
               <div className="relative flex items-center bg-black/40 border border-white/10 rounded-full px-4 py-2 focus-within:border-[#72E5F8]/50 focus-within:bg-[#052E3F]/40 transition-colors">
-                <input 
-                  type="text" 
+                <input
+                  type="text"
                   value={inputValue}
                   onChange={(e) => setInputValue(e.target.value)}
-                  placeholder="Ask a question about hackX Jr…" 
+                  placeholder="Ask a question about hackX Jr…"
                   className="flex-1 bg-transparent border-none outline-none text-white text-sm px-2 py-2 placeholder:text-white/30"
                   disabled={isLoading}
                 />
-                <button 
+                <button
                   type="submit"
                   disabled={isLoading}
                   className="w-10 h-10 rounded-full bg-gradient-to-r from-[#18A0C0] to-[#72E5F8] flex items-center justify-center hover:opacity-90 transition-opacity shrink-0 disabled:opacity-50"
                 >
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                    <path d="M5 12h14M12 5l7 7-7 7" />
                   </svg>
                 </button>
               </div>
