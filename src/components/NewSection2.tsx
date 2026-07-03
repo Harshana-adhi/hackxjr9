@@ -128,7 +128,7 @@ export default function NewSection2() {
         {/* Top Left (Cylinder) */}
         <motion.div
           style={{ y: y1, rotate: rotate1 }}
-          className="absolute lg:left-[42%] lg:top-[-6%] w-[180px] lg:w-[200px] xl:w-[280px] opacity-100"
+          className="absolute lg:left-[52%] lg:top-[-6%] w-[180px] lg:w-[200px] xl:w-[280px] opacity-100"
         >
           <motion.img
             src="/section 2/Top left.webp"
