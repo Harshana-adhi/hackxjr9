@@ -67,14 +67,14 @@ const IMG_TOP = 190 - IMG_H; // 110 vh
 // The line is at exactly 140 world-vh (screen 50vh, center)
 const LINE_Y = 140; // world-vh
 const LINE_L = 50;  // vw start — the mountain's centre. Line sits BEHIND the mountain
-                    // (zIndex 1 < mountain zIndex 20) and emerges from behind it as the
-                    // camera pans right.
+// (zIndex 1 < mountain zIndex 20) and emerges from behind it as the
+// camera pans right.
 const LINE_W = 230; // vw width (50 → 280vw, the center of Image 3 / Grand Finals)
 
 // 7 stages. Regular nodes keep the original 25vw interval; Grand Finals is pushed
 // out by the same 65vw isolation gap as before to give it epic isolation and room
 // for the end image.
-const SX = [90, 115, 140, 165, 190, 215, 280]; // vw positions
+const SX = [90, 120, 140, 165, 190, 215, 280]; // vw positions
 
 // Camera pan stops so Grand Finals (280vw) is perfectly centered (280 - 50 = 230)
 const CAM_END = -230; // vw
@@ -98,7 +98,7 @@ const timelineBgs = [
   "/timeline-bgs/Finals.webp",
 ];
 const BG_CX_DESKTOP = [90, 138, 185, 233, 280]; // world-vw centres spread across the 7-stage span
-const BG_CX_MOBILE  = [160, 268, 375, 483, 590];
+const BG_CX_MOBILE = [160, 268, 375, 483, 590];
 
 function TimelineBackdrops({ cx, width = 42 }: { cx: number[]; width?: number }) {
   return (
@@ -143,37 +143,37 @@ const STAGES = [
   {
     date: "July 3",
     title: "Registrations Open",
-    desc: "Welcome to the official launch, where schools and solo inventors nationwide can secure their place in Sri Lanka's premier innovation challenge.",
+    desc: "Registration begins for schools and young innovators to embark on their journey in Sri Lanka's premier inter-school innovation competition.",
   },
   {
     date: "July 31",
     title: "Awareness Session",
-    desc: "Welcome to our introductory briefing, where we guide students and teachers through the challenge framework and winning strategies.",
+    desc: "An introductory session for students and teachers covering the competition, timeline, and what it takes to succeed.",
   },
   {
-    date: "July 31",
-    title: "Proposal Submission Window",
-    desc: "Welcome to the conceptual launchpad, where teams officially lock in their tech-driven solutions before the final gates close on August 14th.",
+    date: "August 1",
+    title: "Proposal Submission",
+    desc: "Teams submit their innovative ideas and proposed solutions before the proposal submission deadline.",
   },
   {
     date: "August 26",
     title: "Online Workshop Series 1",
-    desc: "Welcome to your foundational training, featuring three vital digital masterclasses on August 26th, September 2nd, and September 12th to jumpstart your innovation build.",
+    desc: "A series of expert-led workshops designed to strengthen innovation, ideation, and solution development.",
   },
   {
     date: "October 3",
-    title: "InnoX: Semi-Finals",
-    desc: "Welcome to the InnoX arena, where the sharpest young minds unite to pitch their initial concepts and vie for a spot in the finals.",
+    title: "InnoX (Semi-Finals)",
+    desc: "Selected teams pitch their ideas to a panel of judges for the opportunity to advance to the Grand Finals.",
   },
   {
     date: "October 13",
     title: "Online Workshop Series 2",
-    desc: "Welcome to the advanced mentoring phase, offering elite coaching sessions on October 13th, 18th, and 25th to polish your prototype and public speaking skills.",
+    desc: "Advanced workshops focused on refining prototypes, presentations, and pitching skills ahead of the finals.",
   },
   {
     date: "November 11",
     title: "Grand Finals",
-    desc: "Welcome to the grandest stage of all, where our national finalists pitch live to claim the ultimate title of Sri Lanka's top junior innovators.",
+    desc: "The nation's top finalists present their innovations on the national stage and compete for the championship title.",
     isGF: true,
   },
 ];
@@ -561,11 +561,11 @@ function DesktopJourneySection() {
 //  First node pushed out to 170vw so there's clear EMPTY GROUND after the
 //  mountain exits (~panVal -66) before the first text arrives.
 // ─────────────────────────────────────────────────────────
-const SX_M       = [160, 225, 290, 355, 420, 485, 590];  // vw positions; regular nodes keep the 65vw interval, GF pushed out by the same 105vw isolation gap
-const CAM_END_M  = -540;                         // -(590 - 50)
-const LINE_W_M   = 540;  // 50 → 590vw (Grand Finals). Begins behind the mountain centre.
-                         // node0 at 160vw slides in from the right just as the mountain
-                         // exits (~panVal -76) — timeline starts with minimal empty ground.
+const SX_M = [160, 235, 290, 355, 420, 485, 590];  // vw positions; regular nodes keep the 65vw interval, GF pushed out by the same 105vw isolation gap
+const CAM_END_M = -540;                         // -(590 - 50)
+const LINE_W_M = 540;  // 50 → 590vw (Grand Finals). Begins behind the mountain centre.
+// node0 at 160vw slides in from the right just as the mountain
+// exits (~panVal -76) — timeline starts with minimal empty ground.
 
 // ─────────────────────────────────────────────────────────
 //  MOBILE COMPONENT
@@ -575,21 +575,21 @@ function MobileJourneySection() {
   const { scrollYProgress } = useScroll({ target: containerRef, offset: ["start start", "end end"] });
   const p = useSpring(scrollYProgress, { stiffness: 80, damping: 25, restDelta: 0.001 });
 
-  const introY    = useTransform(p, [0, 0.20], ["0vh", "90vh"]);
+  const introY = useTransform(p, [0, 0.20], ["0vh", "90vh"]);
   // Fade out text completely BEFORE the mountain starts fading
-  const textOp    = useTransform(p, [0.02, 0.08], [1, 0]);
+  const textOp = useTransform(p, [0.02, 0.08], [1, 0]);
   // Pan starts at p=0.05 (≈ ¼ through the mountain drop phase 0→0.20)
   // so the horizontal timeline begins appearing while the mountain is still visible.
   // Line fill starts at 0.16 (as the mountain exits at 0.22) so it visibly emerges from
   // behind the mountain, and completes at 0.80 so it isn't still filling at the very end.
   const lineScale = useTransform(p, [0.16, 0.80], [0, 1]);
-  const panVal    = useTransform(p, [0.05, 0.87], [0, CAM_END_M]);
-  const worldX    = useMotionTemplate`${panVal}vw`;
-  const worldY    = useTransform(p, [0, 0.20, 0.87, 1.0], ["0vh", "-90vh", "-90vh", "-100vh"]);
+  const panVal = useTransform(p, [0.05, 0.87], [0, CAM_END_M]);
+  const worldX = useMotionTemplate`${panVal}vw`;
+  const worldY = useTransform(p, [0, 0.20, 0.87, 1.0], ["0vh", "-90vh", "-90vh", "-100vh"]);
 
   // Keep the text horizontally centered on screen by counter-panning it against the world
-  const introXNum    = useTransform(panVal, (v) => -v);
-  const introX       = useMotionTemplate`${introXNum}vw`;
+  const introXNum = useTransform(panVal, (v) => -v);
+  const introX = useMotionTemplate`${introXNum}vw`;
 
   // Mountain exit animation:
   // Combines counter-pan (keeps mountain screen-fixed) + leftward slide (p=0.05→0.22).
@@ -602,20 +602,20 @@ function MobileJourneySection() {
     // Slide is completely removed so the cropped container edges NEVER enter the viewport.
     return -pan;
   });
-  const mountainXStr   = useMotionTemplate`${mountainXNum}vw`;
+  const mountainXStr = useMotionTemplate`${mountainXNum}vw`;
   // Start fading mountain ONLY AFTER the text has completely faded out (0.08)
-  const mountainOp     = useTransform(p, [0.08, 0.22], [1, 0]);
+  const mountainOp = useTransform(p, [0.08, 0.22], [1, 0]);
   // Blur ramps up as mountain exits — softens the edge before it fully disappears
-  const mountainBlurN  = useTransform(p, [0.07, 0.21], [0, 16]);
+  const mountainBlurN = useTransform(p, [0.07, 0.21], [0, 16]);
   const mountainFilter = useMotionTemplate`blur(${mountainBlurN}px)`;
 
   // Cloud flash: a bright radial bloom centred on-screen that bursts
   // as the mountain exits, then dissolves to reveal the dark timeline.
   // Counter-panned so it stays at screen centre regardless of world pan.
   const cloudCounterXN = useTransform(panVal, (v) => -v);
-  const cloudX         = useMotionTemplate`${cloudCounterXN}vw`;
-  const cloudOp        = useTransform(p, [0.09, 0.14, 0.19, 0.27], [0, 1, 1, 0]);
-  const cloudScaleVal  = useTransform(p, [0.09, 0.27], [0.2, 2.2]);
+  const cloudX = useMotionTemplate`${cloudCounterXN}vw`;
+  const cloudOp = useTransform(p, [0.09, 0.14, 0.19, 0.27], [0, 1, 1, 0]);
+  const cloudScaleVal = useTransform(p, [0.09, 0.27], [0.2, 2.2]);
 
   // 2D side-scroller: terrain images are STATIC (no scale / no fade). They simply slide
   // through the viewport as the world pans, like a parallax sidescroller. Their soft edge
@@ -830,9 +830,9 @@ function MobileJourneySection() {
 
             {/* Stage nodes */}
             {STAGES.map((stage, i) => {
-              const isGF    = !!stage.isGF;
+              const isGF = !!stage.isGF;
               const isBelow = i % 2 === 1;
-              const x       = SX_M[i];
+              const x = SX_M[i];
 
               return (
                 <motion.div key={i} style={{ display: "contents" }}>
