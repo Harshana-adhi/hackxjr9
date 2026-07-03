@@ -91,10 +91,10 @@ const timelineImages = [
 // empty sky between the mountain and the final reveal. No hard edges: a radial
 // mask feathers every side and the images are heavily dimmed/blurred.
 const timelineBgs = [
-  "/timeline-bgs/registration.webp",
-  "/timeline-bgs/Proposal%20Submission.webp",
+  "/timeline-bgs/Registrations%20awareness%20session.webp",
+  "/timeline-bgs/Product%20Demo.webp",
   "/timeline-bgs/Workshops.webp",
-  "/timeline-bgs/Semi%20FInals.webp",
+  "/timeline-bgs/Semi%20Finals.webp",
   "/timeline-bgs/Finals.webp",
 ];
 const BG_CX_DESKTOP = [90, 138, 185, 233, 280]; // world-vw centres spread across the 7-stage span
