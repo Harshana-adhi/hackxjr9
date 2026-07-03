@@ -47,3 +47,4 @@ next-env.d.ts
 
 # large assets
 public/pillar video.mov
+*.orig
