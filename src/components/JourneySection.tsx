@@ -334,8 +334,8 @@ function DesktopJourneySection() {
                 alt="Mountain"
                 className="w-full h-full object-cover object-top"
                 style={{
-                  WebkitMaskImage: "linear-gradient(to bottom, transparent 0%, black 12%, black 80%, transparent 90%)",
-                  maskImage: "linear-gradient(to bottom, transparent 0%, black 12%, black 80%, transparent 90%)"
+                  WebkitMaskImage: "linear-gradient(to bottom, transparent 0%, black 5%, black 95%, transparent 100%)",
+                  maskImage: "linear-gradient(to bottom, transparent 0%, black 5%, black 95%, transparent 100%)"
                 }}
               />
             </div>
@@ -359,7 +359,7 @@ function DesktopJourneySection() {
                 }}
               >
                 {img.num === 3 ? (
-                  <div style={{ width: "100%", height: "100%", WebkitMaskImage: "linear-gradient(to bottom, transparent 0%, black 22%, black 100%)", maskImage: "linear-gradient(to bottom, transparent 0%, black 22%, black 100%)" }}>
+                  <div style={{ width: "100%", height: "100%", WebkitMaskImage: "linear-gradient(to bottom, transparent 0%, black 5%, black 100%)", maskImage: "linear-gradient(to bottom, transparent 0%, black 5%, black 100%)" }}>
                     <img
                       src={`/horizontal timeline/${img.num}.webp`}
                       alt={`Ruins ${img.num}`}
@@ -373,8 +373,8 @@ function DesktopJourneySection() {
                     />
                   </div>
                 ) : (
-                  <div style={{ width: "100%", height: "100%", WebkitMaskImage: "linear-gradient(to bottom, transparent 0%, black 20%, black 100%)" }}>
-                    <div style={{ width: "100%", height: "100%", WebkitMaskImage: "linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%)" }}>
+                  <div style={{ width: "100%", height: "100%", WebkitMaskImage: "linear-gradient(to bottom, transparent 0%, black 5%, black 100%)" }}>
+                    <div style={{ width: "100%", height: "100%", WebkitMaskImage: "linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%)" }}>
                       <img
                         src={`/horizontal timeline/${img.num}.webp`}
                         alt={`Ruins ${img.num}`}
@@ -772,8 +772,8 @@ function MobileJourneySection() {
                 alt="Mountain"
                 className="w-full h-full object-cover object-top"
                 style={{
-                  WebkitMaskImage: "linear-gradient(to bottom, transparent 0%, black 12%, black 45%, transparent 55%)",
-                  maskImage: "linear-gradient(to bottom, transparent 0%, black 12%, black 45%, transparent 55%)",
+                  WebkitMaskImage: "linear-gradient(to bottom, transparent 0%, black 5%, black 65%, transparent 80%)",
+                  maskImage: "linear-gradient(to bottom, transparent 0%, black 5%, black 65%, transparent 80%)",
                 }}
               />
             </motion.div>
@@ -791,8 +791,8 @@ function MobileJourneySection() {
                 width: "90vw",
                 zIndex: 3,
               }}>
-                <div style={{ width: "100%", height: "100%", WebkitMaskImage: "linear-gradient(to bottom, transparent 0%, black 20%, black 100%)" }}>
-                  <div style={{ width: "100%", height: "100%", WebkitMaskImage: "linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%)" }}>
+                <div style={{ width: "100%", height: "100%", WebkitMaskImage: "linear-gradient(to bottom, transparent 0%, black 5%, black 100%)" }}>
+                  <div style={{ width: "100%", height: "100%", WebkitMaskImage: "linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%)" }}>
                     <img src="/horizontal timeline/2.webp" alt="Ruins 2"
                       style={{ height: "100%", width: "100%", objectFit: "cover", objectPosition: "center bottom", filter: "brightness(0.7) contrast(1.15)", display: "block" }} />
                   </div>
@@ -810,8 +810,8 @@ function MobileJourneySection() {
               width: "150vw",
               zIndex: 3,
             }}>
-              <div style={{ width: "100%", height: "100%", WebkitMaskImage: "linear-gradient(to bottom, transparent 0%, black 18%, black 100%)" }}>
-                <div style={{ width: "100%", height: "100%", WebkitMaskImage: "linear-gradient(to right, transparent 0%, black 3%, black 86%, transparent 100%)" }}>
+              <div style={{ width: "100%", height: "100%", WebkitMaskImage: "linear-gradient(to bottom, transparent 0%, black 5%, black 100%)" }}>
+                <div style={{ width: "100%", height: "100%", WebkitMaskImage: "linear-gradient(to right, transparent 0%, black 2%, black 98%, transparent 100%)" }}>
                   <img src="/horizontal timeline/3.webp" alt="Grand Finals"
                     style={{ height: "100%", width: "100%", objectFit: "cover", objectPosition: "center bottom", filter: "brightness(0.85) contrast(1.15)", display: "block" }} />
                 </div>
