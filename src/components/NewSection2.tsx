@@ -184,7 +184,7 @@ export default function NewSection2() {
             <div className="flex flex-col space-y-3 md:space-y-4">
               <motion.h2
                 {...fade(0.05)}
-                className="text-4xl md:text-5xl lg:text-6xl font-extrabold title-gradient tracking-tight leading-[1.05] text-center md:text-left whitespace-nowrap"
+                className="text-[clamp(1.1rem,4.8vw,2.5rem)] md:text-5xl lg:text-6xl font-extrabold title-gradient tracking-tight leading-[1.05] text-center md:text-left whitespace-nowrap"
               >
                 WHAT IS hackX Jr.
               </motion.h2>
@@ -259,7 +259,7 @@ export default function NewSection2() {
             {/* Stat: 380+ Teams — spans full width */}
             <StatCard className="col-span-2 min-h-[220px]" delay={0.26}>
               <div
-                className="text-4xl md:text-5xl font-extrabold mb-2 tracking-tight"
+                className="whitespace-nowrap text-[clamp(1.1rem,4.8vw,2.5rem)] md:text-5xl font-extrabold mb-2 tracking-tight"
                 style={{
                   background: "linear-gradient(135deg, #72E5F8 0%, #ffffff 60%)",
                   WebkitBackgroundClip: "text",
