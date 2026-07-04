@@ -89,12 +89,8 @@ function formatMessageText(text: string) {
 export default function AskAISection() {
   const [messages, setMessages] = useState<Message[]>([
     {
-      sender: "user",
-      text: "Do we need a working prototype when we register?",
-    },
-    {
       sender: "ai",
-      text: "No. At the registration stage, you only need to submit your idea and the required application details. A working prototype is not mandatory initially, but teams progressing to later stages may be expected to showcase a prototype or proof of concept.",
+      text: "Hello! Welcome to hackX Jr. 9.0. I am your AI assistant. Feel free to ask me anything about the competition, registration details, eligibility, or timelines!",
       showMenu: true,
     },
   ]);
@@ -145,7 +141,16 @@ export default function AskAISection() {
     setIsLoading(true);
 
     try {
-      const response = await fetch(process.env.NEXT_PUBLIC_CHATBOT_API_URL || "http://localhost:5000/api/chat", {
+      let baseUrl = process.env.NEXT_PUBLIC_CHATBOT_API_URL || "http://localhost:8000";
+      if (baseUrl.endsWith("/api/chat")) {
+        baseUrl = baseUrl.slice(0, -9);
+      } else if (baseUrl.endsWith("/api/chat/")) {
+        baseUrl = baseUrl.slice(0, -10);
+      }
+      baseUrl = baseUrl.replace(/\/$/, "");
+      const apiUrl = `${baseUrl}/api/chat/jr`;
+
+      const response = await fetch(apiUrl, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
