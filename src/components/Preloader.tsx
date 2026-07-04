@@ -2,8 +2,9 @@
 
 import { useEffect, useState } from "react";
 
-const MIN_DISPLAY_MS = 1000;
-const FADE_MS = 500;
+// Total on-screen time = MIN_DISPLAY_MS + FADE_MS, kept at ~1s combined.
+const MIN_DISPLAY_MS = 800;
+const FADE_MS = 200;
 
 export default function Preloader() {
   const [visible, setVisible] = useState(true);
