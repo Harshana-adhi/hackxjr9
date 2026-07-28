@@ -150,7 +150,7 @@ const STAGES = [
     desc: "Registration begins for schools and young innovators to embark on their journey in Sri Lanka's premier inter-school innovation competition.",
   },
   {
-    date: "July 31",
+    date: "August 1",
     title: "Awareness Session",
     desc: "An introductory session for students and teachers covering the competition, timeline, and what it takes to succeed.",
   },

@@ -121,11 +121,11 @@ July 3
 Welcome to the official launch, where schools and solo inventors nationwide can secure their place in Sri Lanka's premier innovation challenge.
 
 Phase 02: Awareness Session  
-July 31st  
+August 1st  
 Welcome to our introductory briefing, where we guide students and teachers through the challenge framework and winning strategies.
 
 Phase 03: Proposal Submission Window  
-July 31st   
+August 1st   
 Welcome to the conceptual launchpad, where teams officially lock in their tech-driven solutions before the final gates close on August 14th.
 
 Phase 04: Online Workshop Series 1 (Open to All)  
