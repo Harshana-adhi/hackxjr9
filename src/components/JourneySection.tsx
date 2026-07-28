@@ -491,19 +491,24 @@ function DesktopJourneySection() {
                     </div>
 
                     {(stage as any).hasRegisterBtn && (
-                      <a
-                        href={(stage as any).registerUrl || "https://session.hackxjr.lk"}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center justify-center px-3.5 py-1.5 mt-2.5 rounded-full text-xs font-bold text-white transition-all duration-300 hover:scale-105 shadow-md"
-                        style={{
-                          background: "linear-gradient(135deg, #18A0C0 0%, #72E5F8 100%)",
-                          boxShadow: "0 0 16px rgba(114,229,248,0.35)",
-                          width: "fit-content",
-                        }}
-                      >
-                        Register Now
-                      </a>
+                      <div className="flex flex-col items-start gap-1 mt-3">
+                        <span className="text-[11px] font-semibold tracking-wider uppercase text-[#72E5F8] drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
+                          Reserve your spot
+                        </span>
+                        <a
+                          href={(stage as any).registerUrl || "https://session.hackxjr.lk"}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center justify-center px-3.5 py-1.5 rounded-full text-xs font-bold text-white transition-all duration-300 hover:scale-105 shadow-md"
+                          style={{
+                            background: "linear-gradient(135deg, #18A0C0 0%, #72E5F8 100%)",
+                            boxShadow: "0 0 16px rgba(114,229,248,0.35)",
+                            width: "fit-content",
+                          }}
+                        >
+                          Register Now
+                        </a>
+                      </div>
                     )}
 
                     {/* Stem - absolutely positioned touching the line */}
@@ -923,19 +928,24 @@ function MobileJourneySection() {
                     </div>
 
                     {(stage as any).hasRegisterBtn && (
-                      <a
-                        href={(stage as any).registerUrl || "https://session.hackxjr.lk"}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center justify-center px-2.5 py-1 mt-2 rounded-full text-[10px] font-bold text-white transition-all duration-300 hover:scale-105 shadow-md"
-                        style={{
-                          background: "linear-gradient(135deg, #18A0C0 0%, #72E5F8 100%)",
-                          boxShadow: "0 0 12px rgba(114,229,248,0.35)",
-                          width: "fit-content",
-                        }}
-                      >
-                        Register Now
-                      </a>
+                      <div className="flex flex-col items-start gap-1 mt-2">
+                        <span className="text-[9px] font-semibold tracking-wider uppercase text-[#72E5F8] drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
+                          Reserve your spot
+                        </span>
+                        <a
+                          href={(stage as any).registerUrl || "https://session.hackxjr.lk"}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center justify-center px-2.5 py-1 rounded-full text-[10px] font-bold text-white transition-all duration-300 hover:scale-105 shadow-md"
+                          style={{
+                            background: "linear-gradient(135deg, #18A0C0 0%, #72E5F8 100%)",
+                            boxShadow: "0 0 12px rgba(114,229,248,0.35)",
+                            width: "fit-content",
+                          }}
+                        >
+                          Register Now
+                        </a>
+                      </div>
                     )}
 
                     {!isGF && (
