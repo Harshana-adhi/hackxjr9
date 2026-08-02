@@ -210,7 +210,7 @@ export default function NewSection2() {
               </p>
             </motion.div>
 
-            <motion.div {...fade(0.25)} className="relative z-30 flex justify-center md:justify-start">
+            <motion.div {...fade(0.25)} className="relative z-30 flex flex-wrap gap-4 justify-center md:justify-start">
               <a
                 href="/hackX-Jr. 9.0-Delegate-Booklet.pdf"
                 target="_blank"
@@ -218,6 +218,15 @@ export default function NewSection2() {
                 className="btn-primary group"
               >
                 Delegate Booklet
+                <AnimatedDownloadIcon size={17} />
+              </a>
+              <a
+                href="https://docs.google.com/document/d/1PupIW3PEUUnTAcWWw_sNhJtspaC4CsuCR9mio3iQyEw/edit?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary group"
+              >
+                Proposal Template
                 <AnimatedDownloadIcon size={17} />
               </a>
             </motion.div>
