@@ -224,10 +224,12 @@ export default function Hero() {
             </svg>
           </a>
           <a
-            href="#about"
+            href="https://portal.hackxjr.lk/jr/proposal"
+            target="_blank"
+            rel="noopener noreferrer"
             className="btn-secondary w-full max-w-[280px] md:w-auto"
           >
-            Learn More
+            Submit Proposal
           </a>
         </motion.div>
 
