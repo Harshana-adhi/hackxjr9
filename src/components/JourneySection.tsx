@@ -153,8 +153,6 @@ const STAGES = [
     date: "August 1",
     title: "Awareness Session",
     desc: "An introductory session for students and teachers covering the competition, timeline, and what it takes to succeed.",
-    hasRegisterBtn: true,
-    registerUrl: "https://session.hackxjr.lk",
   },
   {
     date: "Aug 1",
