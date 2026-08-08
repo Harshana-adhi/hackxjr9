@@ -195,7 +195,7 @@ export default function AskAISection() {
       } else if (lowerText.includes("date") || lowerText.includes("timeline") || lowerText.includes("deadline") || lowerText.includes("when")) {
         fallbackReply = "Here is the key timeline for **hackX Jr. 9.0**:\n\n• **July 4**: Registrations Open\n• **August 1**: Awareness Session\n• **August 1**: Proposal Submission\n• **August 26**: Online Workshop Series 1\n• **October 3**: InnoX (Semi-Finals)\n• **October 13**: Online Workshop Series 2\n• **November 11**: Grand Finals";
       } else if (lowerText.includes("register") || lowerText.includes("sign up") || lowerText.includes("apply")) {
-        fallbackReply = "You can register for hackX Jr. 9.0 by clicking any of the **Register Now** buttons on this website. Registration and participation are completely free.";
+        fallbackReply = "Registration for hackX Jr. 9.0 is now closed. You can submit your team's proposal by clicking the **Submit Proposal** button on this website.";
       } else if (lowerText.includes("criteria") || lowerText.includes("compete") || lowerText.includes("eligible")) {
         fallbackReply = "hackX Jr. 9.0 is open to **school students across Sri Lanka**. Innovation from all backgrounds is welcome as long as there is a technology-driven solution behind it.";
       } else if (lowerText.includes("workshop") || lowerText.includes("mentor") || lowerText.includes("series")) {

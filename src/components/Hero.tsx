@@ -213,23 +213,23 @@ export default function Hero() {
           className="flex flex-col md:flex-row gap-3.5 items-center justify-center w-full px-6 md:px-0"
         >
           <a
-            href={process.env.NEXT_PUBLIC_REGISTRATION_URL || "#"}
+            href="https://portal.hackxjr.lk/jr/proposal"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary w-full max-w-[280px] md:w-auto"
           >
-            Register Now
+            Submit Proposal
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
               <path d="M5 12h14M12 5l7 7-7 7"/>
             </svg>
           </a>
           <a
-            href="https://portal.hackxjr.lk/jr/proposal"
+            href="https://docs.google.com/document/d/1PupIW3PEUUnTAcWWw_sNhJtspaC4CsuCR9mio3iQyEw/edit?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-secondary w-full max-w-[280px] md:w-auto"
           >
-            Submit Proposal
+            Proposal Template
           </a>
         </motion.div>
 

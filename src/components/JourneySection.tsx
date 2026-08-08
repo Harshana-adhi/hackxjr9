@@ -494,7 +494,7 @@ function DesktopJourneySection() {
                           Reserve your spot
                         </span>
                         <a
-                          href={(stage as any).registerUrl || "https://session.hackxjr.lk"}
+                          href={(stage as any).registerUrl || "https://portal.hackxjr.lk/jr/proposal"}
                           target="_blank"
                           rel="noopener noreferrer"
                           className="inline-flex items-center justify-center px-3.5 py-1.5 rounded-full text-xs font-bold text-white transition-all duration-300 hover:scale-105 shadow-md"
@@ -504,7 +504,7 @@ function DesktopJourneySection() {
                             width: "fit-content",
                           }}
                         >
-                          Register Now
+                          Submit Proposal
                         </a>
                       </div>
                     )}
@@ -931,7 +931,7 @@ function MobileJourneySection() {
                           Reserve your spot
                         </span>
                         <a
-                          href={(stage as any).registerUrl || "https://session.hackxjr.lk"}
+                          href={(stage as any).registerUrl || "https://portal.hackxjr.lk/jr/proposal"}
                           target="_blank"
                           rel="noopener noreferrer"
                           className="inline-flex items-center justify-center px-2.5 py-1 rounded-full text-[10px] font-bold text-white transition-all duration-300 hover:scale-105 shadow-md"
@@ -941,7 +941,7 @@ function MobileJourneySection() {
                             width: "fit-content",
                           }}
                         >
-                          Register Now
+                          Submit Proposal
                         </a>
                       </div>
                     )}
