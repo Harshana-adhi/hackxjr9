@@ -125,8 +125,8 @@ August 1st
 Welcome to our introductory briefing, where we guide students and teachers through the challenge framework and winning strategies.
 
 Phase 03: Proposal Submission Window  
-August 1st   
-Welcome to the conceptual launchpad, where teams officially lock in their tech-driven solutions before the final gates close on August 14th.
+August 21st   
+Welcome to the conceptual launchpad, where teams officially lock in their tech-driven solutions before the final gates close on August 21st.
 
 Phase 04: Online Workshop Series 1 (Open to All)  
 August 26th  

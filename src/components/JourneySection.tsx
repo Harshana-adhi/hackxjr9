@@ -155,7 +155,7 @@ const STAGES = [
     desc: "An introductory session for students and teachers covering the competition, timeline, and what it takes to succeed.",
   },
   {
-    date: "Aug 1",
+    date: "August 21",
     title: "Proposal Submission",
     desc: "Teams submit their innovative ideas and proposed solutions before the proposal submission deadline.",
   },
