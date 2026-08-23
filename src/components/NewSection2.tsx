@@ -210,24 +210,16 @@ export default function NewSection2() {
               </p>
             </motion.div>
 
-            <motion.div {...fade(0.25)} className="relative z-30 flex flex-wrap gap-4 justify-center md:justify-start">
+            <motion.div {...fade(0.25)} className="relative z-30 flex flex-wrap gap-4 justify-center w-full">
               <a
                 href="/hackX-Jr. 9.0-Delegate-Booklet.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary group"
+                style={{ padding: "18px 48px", fontSize: "1.15rem" }}
               >
                 Delegate Booklet
-                <AnimatedDownloadIcon size={17} />
-              </a>
-              <a
-                href="https://docs.google.com/document/d/1PupIW3PEUUnTAcWWw_sNhJtspaC4CsuCR9mio3iQyEw/edit?usp=sharing"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-primary group"
-              >
-                Proposal Template
-                <AnimatedDownloadIcon size={17} />
+                <AnimatedDownloadIcon size={20} />
               </a>
             </motion.div>
           </div>
