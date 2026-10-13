@@ -8,6 +8,7 @@ import CriteriaSection from "@/components/CriteriaSection";
 import MemoriesSection from "@/components/MemoriesSection";
 import PrizesSection from "@/components/PrizesSection";
 import TeamSection from "@/components/TeamSection";
+import PartnersSection from "@/components/PartnersSection";
 import FAQSection from "@/components/FAQSection";
 import AskAISection from "@/components/AskAISection";
 import Footer from "@/components/Footer";
@@ -25,6 +26,7 @@ export default function Home() {
         <PrizesSection />
         <MemoriesSection />
         <TeamSection />
+        <PartnersSection />
         <FAQSection />
         <AskAISection />
       </main>
