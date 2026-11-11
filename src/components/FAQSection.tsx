@@ -45,6 +45,12 @@ const faqs = [
     category: "MENTORSHIP", 
     title: "Will participants receive mentorship?", 
     answer: "Yes. Participants will gain access to mentorship, workshops, and guidance sessions conducted by industry professionals and experienced innovators." 
+  },
+  { 
+    id: "08",
+    category: "RULES", 
+    title: "What if we have a concern or complaint during the event?", 
+    answer: "Any concerns, complaints or issues must be raised with the Executive Committee on the event day itself, before the final judgement is announced. Complaints raised after the Grand Finals will not be entertained." 
   }
 ];
 
